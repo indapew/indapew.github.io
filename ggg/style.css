@@ -1,0 +1,92 @@
+body {
+	background-image: url("site/SHOP.jpg");
+	background-size: 100%;
+
+}
+header {
+	font-family: Roboto, sans-serif;
+}
+.logo {
+
+}
+.menu {
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul,
+.menu ol{
+	list-style: none;
+}
+
+.menu >ul {
+	display: flex;
+	justify-content: center;
+}
+
+.menu >ul li a {
+	display: block;
+	background-color: #ececed;
+	padding: 15px 30px 15px 40px;
+	font-size: 14px;
+	text-decoration: none;
+	color: #454547;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+
+}
+
+.menu >ul li {
+	position: relative;
+	border-right: 1px solid #c7c8ca;
+}
+
+.menu >ul li>a i.fa{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	font-size: 18px;
+
+}
+
+.menu> ul li: first-child{
+	border-left: 1px solid #b2b3b5;
+}
+.menu>ul li: last-child{
+	border-right: 1px solid #babbbd;
+}
+.menu li a:hover {
+	background-color: #454547;
+	color: #ffffff;
+	box-shadow: 1px 5px 10px -5px black;
+	transition: all 0.3s ease;
+} 
+
+.menu li ul{
+	position: absolute;
+	min-width: 150px;
+	display: none;
+}
+.menu li>ul li {
+	border: 1px solid #c7c8ca;
+}
+.menu li > ul li a{
+	padding: 10px;
+	text-transform: none;
+	text-decoration: none;
+	background: #e4e4e5;	
+}
+
+.menu li> ul li ul {
+	position: absolute;
+	right: -150px;
+	top: 0;
+}
+.menu li:hover > ul{
+	display: block;
+	
+}
+ul>li i {
+	font-size: 15px;
+	margin-right: 15px;
+}
